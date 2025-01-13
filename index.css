@@ -1,69 +1,65 @@
-body{
-    
-    margin: 0%;
-    padding: 0%;
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
     background: url(arrangement-black-friday-shopping-carts-with-copy-space.jpg);
-    background-size:cover ;
+    background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: rgb(121, 118, 118);
-
 }
 
-.login{
-
+.login {
     padding: 20px;
-    background-color: rgb(121, 118, 118, 0.5);
+    background-color: rgba(121, 118, 118, 0.8); /* Slight transparency */
     height: auto;
     text-align: center;
     width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
-h1{
+
+h1 {
     color: #ccc;
     font-size: 2rem;
-    }
-.h2{
+    margin-bottom: 20px;
+}
+
+h2 {
     color: rgb(78, 99, 131);
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
     font-weight: 900;
     margin-bottom: 20px;
 }
-.login i {
-    position:relative;
-    left: 10px;
-    top: 70%;
-    transform: translateY(-50%);
 
-}
-.divContainer-input{
+.divContainer-input {
     position: relative;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
+}
 
+.divContainer-input i {
+    position: absolute;
+    left: 10px; /* Position the icon on the left */
+    top: 50%; /* Vertically center the icon */
+    transform: translateY(-50%); /* Adjust alignment */
+    font-size: 1.2rem;
+    color: #777; /* Optional: icon color */
 }
-.divContainer-input[type="email"],
-.divContainer-input[type="password"]
-{
-     padding-left:40px;
 
-}
-.submit-btn[type="submit"]{
-    padding: 20px;
-}
 .login input {
-    width: 900px;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Add padding on the left to accommodate the icon */
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
     cursor: pointer;
-
 }
+
 .submit-btn {
     width: 100%;
     padding: 10px;
@@ -77,18 +73,21 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
 .submit-btn i {
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
-.footer{
+.footer {
     position: absolute;
-  bottom: 20px;
+    bottom: 20px;
     color: rgb(207, 36, 36);
+    text-align: center;
+    width: 100%;
 }
 
-@media (max-width:480px) {
-    .main {
+@media (max-width: 480px) {
+    .login {
         padding: 15px;
         max-width: 100%;
     }
@@ -104,8 +103,8 @@ h1{
     .login input {
         font-size: 0.9rem;
     }
+
     .submit-btn {
         font-size: 1rem;
     }
-    
 }
